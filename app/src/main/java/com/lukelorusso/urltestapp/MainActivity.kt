@@ -16,14 +16,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // done programmatically
-        val text2 = getString(R.string.textView1)
-        textView2.text = text2
+        val textExample1 = getString(R.string.textExample1)
+        textView2.text = textExample1
         Linkify.addLinks(textView2, Linkify.WEB_URLS)
 
-        // done programmatically with <a href.../>
-        val text3 = "This is also <a href=\"http://www.lukelorusso.com\">a link</a>!"
+        // done programmatically with an HTML-like text: <a href.../>
+        val textExample2 = getString(R.string.textExample2)
         textView3.movementMethod = LinkMovementMethod.getInstance()
-        textView3.text = text3.toHtml()
+        textView3.text = textExample2.toHtml()
     }
 }
 
