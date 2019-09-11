@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Url inside TextView</string>
+    <string name="textView1">This is a link: http://www.lukelorusso.com</string>
+</resources>
